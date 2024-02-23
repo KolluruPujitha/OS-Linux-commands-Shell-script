@@ -146,10 +146,12 @@ hello world
 cat > newfile 
 Hello world
 hello world
+
 grep Hello newfile 
 ## OUTPUT
 
 Hello world
+
 grep hello newfile 
 ## OUTPUT
 
@@ -236,16 +238,16 @@ Linux is best in this World
 ```
 egrep '[1-9]' newfile 
 ## OUTPUT
-
 Linux is world number 1
+
 egrep 'Linux.*world' newfile 
 ## OUTPUT
-
 Linux is world number 1
+
 egrep 'Linux.*World' newfile 
 ## OUTPUT
-
 Linux is best in this World
+
 egrep l{2} newfile
 ## OUTPUT
 ```
@@ -275,10 +277,12 @@ sed -n -e '3p' file23
 ## OUTPUT
 
 1002 | tom |  5000 | Admin
+
 sed -n -e '$p' file23
 ## OUTPUT
 
 1001 | Ram | 10000 | HR
+
 sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
 ```
@@ -364,6 +368,7 @@ seq 10 | sed -n '2,~4p'
 ## OUTPUT
 
 sed: no address after comma
+
 seq 3 | sed '2a hello'
 ## OUTPUT
 ```
@@ -496,9 +501,11 @@ tar -tvf backup.tar
 ## OUTPUT
 
 tar: can't open 'backup.tar': No such file or directory
+
 tar -xvf backup.tar
 ## OUTPUT
 tar: can't open 'backup.tar': No such file or directory
+
 gzip backup.tar
 
 ls .gz
@@ -512,6 +519,7 @@ echo '#!/bin/sh' > my-script.sh
 echo 'echo Hello World‘; exit 0 >> my-script.sh
 ```
 chmod 755 my-script.sh
+
 ./my-script.sh
 ## OUTPUT
 cat << stop > herecheck.txt
@@ -570,9 +578,11 @@ echo $?
 ## OUTPUT 
 ./one
 bash: ./one: Permission denied
+
 echo $?
 ## OUTPUT 
 abcd
+
 echo $?
  ## OUTPUT
 # mis-using string comparisons
@@ -786,6 +796,7 @@ echo "Sorry, you are not allowed here"
 fi
 ```
 $ chmod 755 elifcheck.sh
+
 $ ./elifcheck.sh 
 ## OUTPUT
 # testing compound comparisons
@@ -800,6 +811,7 @@ echo "I cannot write to the file"
 fi
 ```
 $ chmod 755 ifcompound.sh
+
 $ ./ifcompound.sh 
 ## OUTPUT
 
@@ -833,6 +845,7 @@ var1=$[ $var1 - 1 ]
 done
 ```
 $ chmod 755 whiletest.sh
+
 $ ./whiletest.sh
   
 cat untiltest.sh 
@@ -857,6 +870,7 @@ done
  ```
  
 $ chmod 755 forin1.sh
+
 cat forin2.sh 
 ```bash
 \#!/bin/bash
@@ -930,6 +944,7 @@ echo "The value of i is $i"
 done
 ````
 $ chmod 755 forctype.sh
+
 $ ./forctype.sh 
 ## OUTPUT
 
@@ -943,6 +958,7 @@ echo "$a - $b"
 done
 ```
 $ chmod 755 forctype.sh
+
 $ ./forctype1.sh 
 ## OUTPUT
 
@@ -960,6 +976,7 @@ done
 done
 ```
 $ chmod 755 fornested1.sh
+
 $ ./fornested1.sh 
  ## OUTPUT
  
@@ -980,6 +997,7 @@ echo "The for loop is completed“
 ## OUTPUT
 
 $ chmod 755 forbreak.sh
+
 $ ./forbreak.sh 
  
 cat forbreak.sh 
@@ -998,6 +1016,7 @@ echo "The for loop is completed“
 ```
  
 $ chmod 755 forcontinue.sh
+
 $ ./forcontinue.sh 
 ## OUTPUT
  
@@ -1011,6 +1030,7 @@ echo "Hello $name, welcome to my program. "
  ```
  
 $ chmod 755 exread.sh 
+
 $ ./exread.sh 
 ## OUTPUT
 
