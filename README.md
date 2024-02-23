@@ -65,6 +65,7 @@ cmp file1 file2
 ## OUTPUT
 
  file1 file2 differ: char 1, line 1
+ 
 comm file1 file2
  ## OUTPUT
  ```
@@ -172,6 +173,7 @@ cat newfile | grep -i -c "hello"
 grep -R ubuntu /etc
 ## OUTPUT
 2
+
 grep -w -n world newfile   
 ## OUTPUT
 ```
@@ -723,6 +725,7 @@ echo “The values are different”
 fi
 ```
 $ chmod 755 iftest.sh 
+
 $ ./iftest.sh 
 ##OUTPUT
 # check if a file
