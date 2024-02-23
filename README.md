@@ -63,6 +63,7 @@ s.n. dasgupta
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
+
  file1 file2 differ: char 1, line 1
 comm file1 file2
  ## OUTPUT
@@ -153,9 +154,11 @@ grep hello newfile
 ## OUTPUT
 
 hello world
+
 grep -v hello newfile 
 ## OUTPUT
 Hello world
+
 cat newfile | grep -i "hello"
 ## OUTPUT
 ```
